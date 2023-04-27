@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todaApp.css" type="text/css">
+</head>
+<body>
+    <main id="todo-app">
+        <div id="top">
+            <h1 id="header">ToDo App</h1>
+        </div>
+        <div class="add-task">
+            <p class="text">Hello, What is your task(s) for today? <br> Add it below and make sure you complete it soon. <br> All the best </p>
+            <form 
+            id="addTaskForm" 
+            onsubmit="addTask(event)"
+            >
+            <div class="input-btn">
+                <input type="text" id="taskInput" placeholder="Add task here" required />
+                <button type="submit" class="btn">Add Task</button>
+            </div>
+            
+            </form>
+        </div>
+        <div>
+            <ul id="taskList"></ul>
+        </div>
+    </main>
+    
+    <script src="./todoApp.js"></script>
+</body>
+</html>
